@@ -1,3 +1,16 @@
+/* COMMON CSS */
+@font-face{
+  font-family : "Montserrat-bold";
+  src: url("../assets/fonts/montserrat/Montserrat-Bold.ttf")
+}
+@font-face{
+  font-family : "Montserrat-regular";
+  src: url("../assets/fonts/montserrat/Montserrat-Light.ttf")
+}
+@font-face{
+  font-family : "Montserrat-light";
+  src: url("../assets/fonts/montserrat/Montserrat-Light.ttf")
+}
 ul {
   list-style: none;
   margin: 0;
@@ -16,16 +29,15 @@ ul {
 .txt-40 {
   font-size: 2.5rem;
 }
-.container {
-  position: relative;
-}
+/* CUSTOM CSS */
 .navbar {
   align-items: center;
   background-color: #252b42;
   display: flex;
+  font-family : "Montserrat-bold";
   justify-content: space-between;
-  padding-top: 1.5rem;
   padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -35,9 +47,6 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-top: -13px;
-    /* position: absolute; */
-    /* top: 75px; */
-    /* left: 90px; */
   }
 }
 .header-bg {
@@ -71,9 +80,11 @@ ul {
   margin-top: -10px;
 }
 .header-bg__info-head {
+  font-family : "Montserrat-bold";
   font-size: 3.625rem;
 }
 .header-bg__info p {
+  font-family : "Montserrat-light";
   font-size: 1.25rem;
 }
 .section__features {
@@ -85,7 +96,13 @@ ul {
   padding: 6rem 0;
 }
 .section__testimonial-head {
+  font-family : "Montserrat-bold";
   font-size: 2.5rem;
+}
+.section__testimonial-info,
+.section__industry-info,
+.section__pricing-info{
+  margin-bottom:85px
 }
 .section__testimonial-box {
   background: white;
@@ -161,11 +178,12 @@ ul {
 }
 .section__pricing {
   background: #252b42;
-  padding: 7rem 0px;
+  padding: 5rem 0px;
 }
 .section__pricing-box {
   background: white;
   border-radius: 10px;
+  margin:3rem 0px;
   width: 21rem;
 }
 .section__pricing-list-item-box-check {
@@ -175,8 +193,8 @@ ul {
   display: flex;
   height: 32px;
   justify-content: center;
-  width: 32px;
   margin-right: 5px;
+  width: 32px;
 }
 .section__pricing-list-item-box-check-gry {
   align-items: center;
@@ -185,8 +203,8 @@ ul {
   display: flex;
   height: 32px;
   justify-content: center;
-  width: 32px;
   margin-right: 5px;
+  width: 32px;
 }
 .check {
   border-bottom: 3px solid #fff;
@@ -201,14 +219,14 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .section__pricing-list-item-box-btn {
-    order: -1;
     margin: 20px 0;
+    order: -1;
   }
 }
 .section__pricing-cols {
+  align-items: center;
   display: flex;
   gap: 24px;
-  align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
@@ -231,8 +249,8 @@ ul {
   margin: 5px 0;
 }
 .section_footer-row-cols a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 .section__footer-copyright {
   background: #252b42;
@@ -261,17 +279,34 @@ ul {
   margin-bottom: 50px;
 }
 .new-offer {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  top: -42px;
-  right: 17px;
+  align-items: center;
   background: #e77c40;
   border-radius: 52px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  color: white;
+  display: flex;
+  font-size: 21px;
   font-weight: 700;
-  font-size: 24px;
-  color:white
+  height: 75px;
+  justify-content: center;
+  position: absolute;
+  right: 9px;
+  top: -50px;
+  width: 75px;
 }
+ .section__pricing-list-item-box-price-amount{
+  color: #23A6F0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 57px;
+ }
+ .section__pricing-list-item-box-price-limit{
+  color: #8EC2F2;
+  font-family: 'Montserrat-light';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+ }
