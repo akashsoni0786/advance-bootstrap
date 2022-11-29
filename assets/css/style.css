@@ -1,0 +1,229 @@
+@font-face {
+  font-display: swap;
+  font-family: "Martel-UltraLight";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/martel/Martel-UltraLight.eot");
+  src: url("../fonts/martel/Martel-UltraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/martel/Martel-UltraLight.woff2") format("woff2"),
+    url("../fonts/martel/Martel-UltraLight.woff") format("woff"),
+    url("../fonts/martel/Martel-UltraLight.ttf") format("truetype"),
+    url("../fonts/martel/Martel-UltraLight.svg#Martel-UltraLight") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Martel-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/martel/Martel-Light.eot");
+  src: url("../fonts/martel/Martel-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/martel/Martel-Light.woff2") format("woff2"),
+    url("../fonts/martel/Martel-Light.woff") format("woff"),
+    url("../fonts/martel/Martel-Light.ttf") format("truetype"),
+    url("../fonts/martel/Martel-Light.svg#Martel-Light") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Martel-DemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/martel/Martel-DemiBold.eot");
+  src: url("../fonts/martel/Martel-DemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/martel/Martel-DemiBold.woff2") format("woff2"),
+    url("../fonts/martel/Martel-DemiBold.woff") format("woff"),
+    url("../fonts/martel/Martel-DemiBold.ttf") format("truetype"),
+    url("../fonts/martel/Martel-DemiBold.svg#Martel-DemiBold") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Martel-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/martel/Martel-Regular.eot");
+  src: url("../fonts/martel/Martel-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/martel/Martel-Regular.woff2") format("woff2"),
+    url("../fonts/martel/Martel-Regular.woff") format("woff"),
+    url("../fonts/martel/Martel-Regular.ttf") format("truetype"),
+    url("../fonts/martel/Martel-Regular.svg#Martel-Regular") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Martel-ExtraBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/martel/Martel-ExtraBold.eot");
+  src: url("../fonts/martel/Martel-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/martel/Martel-ExtraBold.woff2") format("woff2"),
+    url("../fonts/martel/Martel-ExtraBold.woff") format("woff"),
+    url("../fonts/martel/Martel-ExtraBold.ttf") format("truetype"),
+    url("../fonts/martel/Martel-ExtraBold.svg#Martel-ExtraBold") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Martel-Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/martel/Martel-Bold.eot");
+  src: url("../fonts/martel/Martel-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/martel/Martel-Bold.woff2") format("woff2"),
+    url("../fonts/martel/Martel-Bold.woff") format("woff"),
+    url("../fonts/martel/Martel-Bold.ttf") format("truetype"),
+    url("../fonts/martel/Martel-Bold.svg#Martel-Bold") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Martel-Heavy";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/martel/Martel-Heavy.eot");
+  src: url("../fonts/martel/Martel-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/martel/Martel-Heavy.woff2") format("woff2"),
+    url("../fonts/martel/Martel-Heavy.woff") format("woff"),
+    url("../fonts/martel/Martel-Heavy.ttf") format("truetype"),
+    url("../fonts/martel/Martel-Heavy.svg#Martel-Heavy") format("svg");
+}
+ul {
+  list-style: none;
+}
+.section__youtube {
+  padding: 100px;
+}
+.section__youtube-head,
+.section__testimonial-head {
+  font-family: "Martel-Regular";
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.section__youtube-para,
+.section__testimonial-para {
+  font-family: "Martel-Light";
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+.popup-video {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.popup-video video {
+  border-radius: 5px;
+  left: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+}
+.popup-video span {
+  color: #fff;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: bolder;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  z-index: 1000;
+}
+
+.section__youtube-box-play-btn {
+  background: #295c7a;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 75px;
+  left: 40%;
+  position: absolute;
+  top: 40%;
+  width: 75px;
+}
+.triangle-right {
+  border-bottom: 18px solid transparent;
+  border-left: 30px solid white;
+  border-top: 18px solid transparent;
+  height: 0;
+  margin: 21px 27px;
+  width: 0;
+}
+.section__youtube-info {
+  padding: 30px;
+}
+.section__youtube-list-item p:first-child {
+  font-family: "Martel-Regular";
+  font-size: 16px;
+  margin: 0;
+}
+.section__youtube-list-item p:nth-child(2) {
+  color: #737373;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+.section__youtube-list > * {
+  margin: 40px 0;
+}
+.section__testimonial {
+  background-color: #295c7a;
+  padding: 100px 0;
+}
+.section__testimonial-box {
+  background-color: #fff;
+  /* width: 300px; */
+  padding: 30px 60px;
+  margin: 0 100px;
+}
+.section__testimonial-box-name {
+  color: #252b42;
+  font-family: "Martel-Regular";
+  line-height: 32px;
+}
+.section__testimonial-box-post {
+  font-family: "Martel-Regular";
+  font-size: 14px;
+  color: #737373;
+}
+.clip-star {
+  background: gold;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.section__testimonial-box-rating{
+    margin-left: -4px;
+}
+.section__testimonial-box-comment{
+    font-size: 14px;
+}
+.section__testimonial-box-img{
+    width:95px !important;
+    position: absolute;
+    top: 14px;
+    left: -71px;
+}
