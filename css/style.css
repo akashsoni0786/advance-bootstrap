@@ -16,18 +16,28 @@ ul {
 .txt-40 {
   font-size: 2.5rem;
 }
+.container {
+  position: relative;
+}
 .navbar {
   align-items: center;
   background-color: #252b42;
   display: flex;
   justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
+
 @media screen and (min-width: 768px) {
   .navbar {
     align-items: center;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
+    margin-top: -13px;
+    /* position: absolute; */
+    /* top: 75px; */
+    /* left: 90px; */
   }
 }
 .header-bg {
@@ -37,7 +47,8 @@ ul {
       #000000 0.14%,
       rgba(0, 0, 0, 0) 99.56%
     ),
-    url("../images/bg.jpg") no-repeat center;
+    url("../images/bg.jpg") no-repeat center center;
+  background-size: cover;
   height: 80vh;
   margin-top: -10px;
 }
@@ -154,8 +165,8 @@ ul {
 }
 .section__pricing-box {
   background: white;
-  border-radius:10px;
-  width:21rem
+  border-radius: 10px;
+  width: 21rem;
 }
 .section__pricing-list-item-box-check {
   align-items: center;
@@ -165,17 +176,17 @@ ul {
   height: 32px;
   justify-content: center;
   width: 32px;
-  margin-right:5px
+  margin-right: 5px;
 }
 .section__pricing-list-item-box-check-gry {
   align-items: center;
-  background: #BDBDBD;
+  background: #bdbdbd;
   border-radius: 50%;
   display: flex;
   height: 32px;
   justify-content: center;
   width: 32px;
-  margin-right:5px
+  margin-right: 5px;
 }
 .check {
   border-bottom: 3px solid #fff;
@@ -185,23 +196,82 @@ ul {
   transform: rotate(45deg);
   width: 8px;
 }
-.section__pricing-list-item-box-btn{
-  margin:20px 0px;
+.section__pricing-list-item-box-btn {
+  margin: 20px 0;
 }
 @media screen and (min-width: 768px) {
-  .section__pricing-list-item-box-btn{
-    order:-1;
-    margin:20px 0px;
+  .section__pricing-list-item-box-btn {
+    order: -1;
+    margin: 20px 0;
   }
 }
-.myClass{
+.section__pricing-cols {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  .myClass{
-    flex-direction:column
+  .section__pricing-cols {
+    flex-direction: column;
   }
+}
+.section__contact {
+  padding: 40px 0;
+}
+.section_footer {
+  background: #252b42;
+  padding: 3.125rem 0;
+}
+.section_footer-row-cols,
+.section_footer-row-cols-address {
+  margin: 20px 10px;
+}
+.section_footer-row-cols > * {
+  margin: 5px 0;
+}
+.section_footer-row-cols a {
+  text-decoration: none;
+  color: white;
+}
+.section__footer-copyright {
+  background: #252b42;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .section__footer-copyright {
+    background: white;
+    color: #737373;
+  }
+}
+.section__footer-copyright > * {
+  padding: 50px 0;
+}
+.section__subscribe {
+  background: linear-gradient(
+      89.83deg,
+      #ffffff 14.24%,
+      #ffffff 14.25%,
+      rgba(255, 255, 255, 0) 99.55%
+    ),
+    url("../images/bg2.jpg") no-repeat right;
+  padding: 90px 0;
+}
+.section__subscribe-head {
+  margin-bottom: 50px;
+}
+.new-offer {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: -42px;
+  right: 17px;
+  background: #e77c40;
+  border-radius: 52px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight: 700;
+  font-size: 24px;
+  color:white
 }
