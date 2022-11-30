@@ -49,7 +49,7 @@
                 Most calendars are designed for teams. Slate is designed for
                 freelancers who want a simple way to plan their schedule.
               </p>
-              <ul class="section__youtube-list">
+              <ul class="section__youtube-list p-0">
                 <li class="section__youtube-list-item d-flex">
                   <div class="pe-4">
                     <svg
@@ -115,14 +115,16 @@
       </section>
       <section class="section section__testimonial">
         <h2 class="section__testimonial-head text-center text-light">
-          Who we are
+          What Clients Say
         </h2>
         <p class="section__testimonial-para text-center text-light">
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics
         </p>
         <div class="large-12 columns">
-          <div class="loop owl-carousel owl-theme">
+          <div 
+          class="loop owl-carousel owl-theme"
+          >
             <div class="section__testimonial-box position-relative">
               <img class="section__testimonial-box-img" src="./assets/images/user.png" alt="user-image"/>
               <h3 class="section__testimonial-box-name">Regina Miles</h3>
@@ -194,18 +196,16 @@
           "./assets/videos/light-video.mp4";
       };
       // OWL CAROUSEL
- 
         $(".loop").owlCarousel({
           center: true,
           items: 2,
           loop: true,
           margin: 50,
-          stagePadding:100,
           responsive: {
-            600: {
-              items: 2,
+            0: {
+              items: 1,
             },
-            400: {
+            768: {
               items: 2,
             }
           },

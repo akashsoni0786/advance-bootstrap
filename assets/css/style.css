@@ -183,9 +183,19 @@ ul {
 }
 .section__testimonial-box {
   background-color: #fff;
-  /* width: 300px; */
   padding: 30px 60px;
   margin: 0 100px;
+}
+@media only screen and (max-width:600px){
+  .section__testimonial-box {
+    background-color: #fff;
+    width: 80%;
+    padding: 30px 60px;
+    margin: 0 auto;
+  }
+}
+.section__testimonial .section__testimonial-box:not(:last-child){
+  margin-bottom: 60px;
 }
 .section__testimonial-box-name {
   color: #252b42;
@@ -225,5 +235,5 @@ ul {
     width:95px !important;
     position: absolute;
     top: 14px;
-    left: -71px;
+    left: -50px;
 }
